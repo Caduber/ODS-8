@@ -16,7 +16,7 @@
 - Github para versionamento
 
 
-:flags: Objetivos:
+# :flags: Objetivos:
 
 - Nosso projeto visa informar sobre a ODS 8 - Objetivo de Desenvolvimento Sustentável.
 - Também queremos proporiconar um sitema de login 
