@@ -77,6 +77,31 @@ span {
     /* border: 5px solid black; */
 }
 
+#sobre-itens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    box-shadow: 5px 10px 10px 1px #bebebe;
+    width: 300px;
+    height: 350px;
+}
+
+
+
+
+
+footer{
+    background-color: #810c2f;
+    color: #f0f0f0;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* Responsividade para telas menores */
 @media (max-width: 1200px) {
     #banner {
