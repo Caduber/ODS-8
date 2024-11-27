@@ -77,13 +77,24 @@ span {
     /* border: 5px solid black; */
 }
 
+#sobre-titulo{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    font-weight: 500;
+    font-size: 40px;
+}
+
 #sobre-itens{
+    margin-right: 20%;
+    margin-left: 20%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .card{
+    background-color: #fafafa;
     box-shadow: 5px 10px 10px 1px #bebebe;
     width: 300px;
     height: 350px;
