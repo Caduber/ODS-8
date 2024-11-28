@@ -25,7 +25,7 @@
 # :file_folder: Curriculos:
 
 - [Bruno Dutra](https://brinomd.github.io/CurriculoBruno/)
-- Carlos Eduardo
+- [Carlos Eduardo](https://caduber.github.io/CV-Front-End/)
 - Pedro Lucas
 
 
