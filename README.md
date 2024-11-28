@@ -19,9 +19,14 @@
 # :flags: Objetivos:
 
 - Nosso projeto visa informar sobre a ODS 8 - Objetivo de Desenvolvimento Sustentável.
-- Também queremos proporiconar um sitema de login 
+- Também queremos proporiconar um sitema de login.
+- Além de mostrar de como contribuir para essa causa.
 
+# :file_folder: Curriculos:
 
+- [Bruno Dutra](https://brinomd.github.io/CurriculoBruno/)
+- Carlos Eduardo
+- Pedro Lucas
 
 
  :shipit: 
