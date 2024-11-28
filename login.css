@@ -3,7 +3,6 @@
 *{
     margin: 0px;
     font-family: 'Roboto Condensed', serif;
-    font-optical-sizing: auto;
 }
 
 hr{
@@ -37,10 +36,9 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: -100px;
 }
 
-#senha{
+#Senha{
     border: none;
     background-color: rgb(207, 207, 207);
     border-radius: 5px;
@@ -48,7 +46,7 @@ hr{
     width: 100%;
 }
 
-#email{
+#Email{
     border: none;
     background-color: rgb(207, 207, 207);
     border-radius: 5px;

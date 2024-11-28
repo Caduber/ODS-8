@@ -3,7 +3,6 @@
 * {
 	margin: 0px;
 	font-family: 'Roboto Condensed', serif;
-	font-optical-sizing: auto;
 }
 
 hr {
@@ -68,7 +67,7 @@ i:hover{
 
 #cadastroForm {
 	background-color: white;
-	height: 60%;
+	height: 90%;
 	width: 25%;
 	border-radius: 20px;
 	justify-content: center;
@@ -82,10 +81,9 @@ i:hover{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	gap: -100px;
 }
 
-#nome {
+.campo{
 	border: none;
 	background-color: rgb(207, 207, 207);
 	border-radius: 5px;
@@ -93,30 +91,16 @@ i:hover{
 	width: 100%;
 }
 
-#senha {
-	border: none;
-	background-color: rgb(207, 207, 207);
-	border-radius: 5px;
-	height: 30px;
-	width: 100%;
-}
-
-#email {
-	border: none;
-	background-color: rgb(207, 207, 207);
-	border-radius: 5px;
-	height: 30px;
-	width: 100%;
-}
-
-button {
+.button {
 	background-color: #9e0130;
 	border: none;
 	border-radius: 5px;
 	height: 50px;
+    width: 100%;
 	color: white;
-}
-
-button:hover {
-	background-color: #cf003e;
+	text-decoration: none;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
