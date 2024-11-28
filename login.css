@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    font-family: 'Roboto Condensed', serif;
+    font-optical-sizing: auto;
+}
+
+hr{
+    height: 5px;
+    background-color: #9e0130;
+    border-radius: 20px;
+}
+
+#loginPage {
+	background: linear-gradient(to bottom right, #9e0130, #000000);
+	width: 100vw;
+	height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginForm{
+    background-color: white;
+    height: 60%;
+    width: 25%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#form{
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: -100px;
+}
+
+#senha{
+    border: none;
+    background-color: rgb(207, 207, 207);
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+}
+
+#email{
+    border: none;
+    background-color: rgb(207, 207, 207);
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+}
+
+button{
+    background-color: #9e0130;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    color: white;
+}
+
+button:hover{
+    background-color: #cf003e;
+}
