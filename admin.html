@@ -1,0 +1,60 @@
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Login</title>
+	<link rel="stylesheet" href="admin.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="scripts/admin.js"></script>
+</head>
+
+<body>
+	<section id="cadPage">
+
+		<div id="loginForm">
+			<form id="form">
+				<h1>Faça o seu Cadastro</h1>
+				<hr />
+				<div>
+					<label for="Nome">Nome de Usuário</label><br />
+					<input type="text" name="Nome" id="Nome" /><br />
+				</div>
+				<div>
+					<label for="Email">Email</label><br />
+					<input type="email" name="Email" id="Email" /><br />
+				</div>
+				<button onclick="cadastrarAdmin(event)">Cadastrar</button>
+				<button type="reset">Limpar</button>
+
+				<p>Ver cadastros: <a href="cadastro.html">aqui</a></p>
+			</form>
+		</div>
+
+		<div id="tabela-cadastro">
+			<h2><label for="pesquisa">Digite o nome ou email do administrador que deseja consultar</label></h2>
+			<input type="text" name="pesquisa" id="pesquisa">
+			<div>
+				<button onclick="procuraNome()">Consultar Nome</button>
+				<button onclick="procuraEmail()">Consultar E-mail</button>
+				<button onclick="resetaPag()">Limpar Filtro</button>
+			</div>
+
+			<h1>Lista de Administradores</h1>
+			<ul id="lista-cadastro">
+
+			</ul>
+
+			<div id="Botoes">
+				<button onclick="limparTodos()">Limpar Todos</button>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>
