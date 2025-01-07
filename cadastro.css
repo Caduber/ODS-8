@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Roboto Condensed', serif;
+}
+
+/*============================================================================*/
+
+#cadPage {
+    background: linear-gradient(to bottom right, #9e0130, #000000);
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabela-cadastro {
+    background-color: white;
+    height: fit-content;
+    min-height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#visualizacao {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#lista-cadastro li {
+    list-style: none;
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+/* Botão de excluir */
+.btn-excluir {
+    background-color: #9e0130;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-excluir:hover {
+    background-color: #e60000;
+}
+
+button {
+    background-color: #9e0130;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    color: white;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+input {
+    margin-top: 20px;
+    height: 30px;
+}
+
+button:hover {
+    background-color: #cf003e;
+}

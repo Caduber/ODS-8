@@ -1,7 +1,7 @@
 let admins = JSON.parse(localStorage.getItem('admins')) || [];
 
 function cadastrarAdmin(event) {
-    event.preventDefault();
+    // event.preventDefault();
 
     const nome = document.getElementById('Nome').value.trim();
     const email = document.getElementById('Email').value.trim();
