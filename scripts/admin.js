@@ -1,16 +1,14 @@
 let admins = JSON.parse(localStorage.getItem('admins')) || [];
 
 function cadastrarAdmin(event) {
-    // event.preventDefault();
 
     const nome = document.getElementById('Nome').value.trim();
     const email = document.getElementById('Email').value.trim();
-    const dataCadastro = new Date().toLocaleString(); // Obtém a data e hora atual no formato local
+    const dataCadastro = new Date().toLocaleString();
 
     if (nome && email) {
         admins.push({ nome, email, dataCadastro });
 
-        // Salva o array atualizado no Local Storage
         localStorage.setItem('admins', JSON.stringify(admins));
 
         alert('Administrador cadastrado com sucesso!');
@@ -72,17 +70,15 @@ function procuraNomeOuEmail() {
         return;
     }
 
-    // Encontrar o administrador pelo nome ou email
     const resultado = admins.find(
         admin =>
             admin.nome.toLowerCase() === pesquisa || admin.email.toLowerCase() === pesquisa
     );
 
     const lista = document.getElementById('lista-cadastro');
-    lista.innerHTML = ''; // Limpa a lista atual
+    lista.innerHTML = ''; 
 
     if (resultado) {
-        // Exibir o administrador encontrado
         const li = document.createElement('li');
         li.innerHTML = `
             <span>
@@ -93,7 +89,6 @@ function procuraNomeOuEmail() {
         `;
         lista.appendChild(li);
     } else {
-        // Exibir mensagem de "não encontrado"
         lista.innerHTML = '<li>Administrador não encontrado.</li>';
     }
 }
