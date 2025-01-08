@@ -1,6 +1,7 @@
 let admins = JSON.parse(localStorage.getItem('admins')) || [];
 
 function cadastrarAdmin(event) {
+    // event.preventDefault();
 
     const nome = document.getElementById('Nome').value.trim();
     const email = document.getElementById('Email').value.trim();
@@ -61,7 +62,7 @@ function limparTodos() {
     alert('Todos os administradores foram excluídos!');
 }
 
-function procuraNomeOuEmail() {
+function procuraNome() {
     const admins = JSON.parse(localStorage.getItem('admins')) || [];
     const pesquisa = document.getElementById('pesquisa').value.trim().toLowerCase();
 
@@ -72,11 +73,43 @@ function procuraNomeOuEmail() {
 
     const resultado = admins.find(
         admin =>
-            admin.nome.toLowerCase() === pesquisa || admin.email.toLowerCase() === pesquisa
+            admin.nome.toLowerCase() === pesquisa
     );
 
     const lista = document.getElementById('lista-cadastro');
-    lista.innerHTML = ''; 
+    lista.innerHTML = '';
+
+    if (resultado) {
+        const li = document.createElement('li');
+        li.innerHTML = `
+            <span>
+                Nome: ${resultado.nome} <br>
+                Email: ${resultado.email} <br>
+                Data de Cadastro: ${resultado.dataCadastro}
+            </span>
+        `;
+        lista.appendChild(li);
+    } else {
+        lista.innerHTML = '<li>Administrador não encontrado.</li>';
+    }
+}
+
+
+function procuraEmail() {
+    const admins = JSON.parse(localStorage.getItem('admins')) || [];
+    const pesquisa = document.getElementById('pesquisa').value.trim().toLowerCase();
+
+    if (!pesquisa) {
+        alert("Por favor, insira um nome ou e-mail para pesquisar!");
+        return;
+    }
+
+    const resultado = admins.find(
+        admin =>
+            admin.email.toLowerCase() === pesquisa
+    )
+    const lista = document.getElementById('lista-cadastro');
+    lista.innerHTML = '';
 
     if (resultado) {
         const li = document.createElement('li');
@@ -94,3 +127,9 @@ function procuraNomeOuEmail() {
 }
 
 window.onload = criaItem;
+
+
+function resetaPag() {
+    location.reload()
+}
+
